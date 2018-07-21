@@ -34,27 +34,20 @@ Functional categorization (Gene Ontology) of DASGs and DEGs under Fe-deficiency 
 10. Figure4A-D_gene_structure.sh
 Alternative splicing of four genes under Fe-deficiency or P-deficiency conditions in rice roots. The input file 'PiFeZnCuMn_in_ex.xls' and 'PiFeZnCuMn_psi.xls' were the output file from '3.ASE_RNASeqAnalysis_of_nutrient_deficiency.sh'. The input file 'merged_filter_multiexon_junction40_TPM_CDS.gtf', 'merged_filter_multiexon_junction40_TPM.gtf' and 'merged_filter_multiexon_junction40_TPM.fa' were the output file from '2.Assembly_RNASeqAnalysis_of_nutrient_deficiency.sh'. The input file 'PiFeZnCuMn_transcript_sample_TPM_filter.xls' was the output file from '4.DEG_RNASeqAnalysis_of_nutrient_deficiency.sh'. 'LOC_Os03g06520.1_domain.gtf', 'LOC_Os07g30130.1_domain.gtf', 'LOC_Os02g55910.1_domain.gtf' and 'LOC_Os05g48390.1_domain.gtf' were deposited in the database folder.
 
-
 11.Figure5A_high_ASG_domain_barplot_high.r
 Protein domain barplot of high-frequency alternative splicing genes. The input file 'high_AS_genes_domain_enrichment_significant.xls' was the output file from '3.ASE_RNASeqAnalysis_of_nutrient_deficiency.sh'.
-
 
 12. Figure5B_SR_DASG_heatmap.r
 Alternative splicing of 22 rice SR genes under mineral nutrient deficiency. The input file 'SRs_FeZnCuMn_DASG_overlap.xls', 'SRs_PiRoot_DASG_overlap.xls', and 'SRs_PiShoot_DASG_overlap.xls' were the output file from '5.DASG_RNASeqAnalysis_of_nutrient_deficiency.sh'.
 
-
 13: SupplementalFigure2A_and_B_intron_length_distribution.r
 Intron length distribution plot. The input file 'gene_intron_distribution1.xls' and 'gene_intron_distribution2.xls' were the output file from '2.Assembly_RNASeqAnalysis_of_nutrient_deficiency.sh'.
-
 
 14. SupplementalFigure2C_SpliceSite_proportion_known_novel.r
 Proportion of canonical or non-canonical splice site usage in known and novel AS. The input file 'splice_site_stat.xls' was the output file from '3.ASE_RNASeqAnalysis_of_nutrient_deficiency.sh'.
 
-
-
 15. SupplementalFigure2D_ASE_feature_boxplot.r
 AS frequency of intron-containing genes associated with exon or intron number, exon or intron length, transcriptional abundance and GC content. All input files were the output file from '3.ASE_RNASeqAnalysis_of_nutrient_deficiency.sh'.
-
 
 16. SupplementalFigure3_ASG_stat.r The input file 'ASG_condition.xls' was the output file from '3.ASE_RNASeqAnalysis_of_nutrient_deficiency.sh'.
  
