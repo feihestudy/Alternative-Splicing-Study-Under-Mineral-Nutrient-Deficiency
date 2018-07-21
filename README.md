@@ -4,10 +4,12 @@ A critical role for alternative splicing in maintaining mineral nutrient homeost
 
 The repository has 2 folders, including pcd and database. The shell/R code in the main folder is used to replicate the alternative splicing analysis pipeline, including main figures. The shell script provide the step-by-step guide to analize mineral nutrient deficiency RNASeq dataset analysis. The perl/R in the pcd folder will be also called in each shell script. The genome sequence and several associated gene annotation files, which will be the intermediate result of the pipeline is deposited in the database fold. 
  
-#1. 0.create_genome_database.sh
+1. 0.create_genome_database.sh
+
 Download rice chromosome sequences and gene annotation files from RAPDB and MSU database. The non-redundant reference gene GTF file from two database will be merged. The merged gtf will be used for RNASeq read STAR alignment. These files will be deposited in the database fold.
 
 2. 1.QC_and_alignment_RNASeqAnalysis_of_nutrient_deficiency.sh
+
 Download all the 15 RNA-Seq data of Micronutrient deficiency, which are available under the accession number SRP117202(https://www.ncbi.nlm.nih.gov/sra/?term=SRP117202). Download all the 126 RNA-Seq data of the time course of Pi-starved root and shoot samples, which are available under the accession number SRA097415 (Secco et al., 2013)(https://www.ncbi.nlm.nih.gov/sra/?term=SRA097415). Create project folder, and each sample name folder under the project folder. FastQ trimming and alignment will be finished in each sample name folder.
 
 3. 2.Assembly_RNASeqAnalysis_of_nutrient_deficiency.sh
