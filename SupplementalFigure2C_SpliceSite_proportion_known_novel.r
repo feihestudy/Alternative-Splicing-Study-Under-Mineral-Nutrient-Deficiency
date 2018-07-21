@@ -1,0 +1,28 @@
+library(grid)
+tiff(filename="SupplementalFigure2C.tiff",width=650)
+layout(matrix(c(1,2), 1, 2, byrow = FALSE))
+a <-read.table("splice_site_stat.xls", sep="\t", header=FALSE)
+a <- a[1:3,]
+names(a)<-c("Variable","Value")
+p <- a
+par(mar=c(2, 3, 2, 3))
+pers <- p$Value/sum(p$Value)
+lbs <- paste(round(pers*100,2), "%", sep="")
+pie(p$Value,border="white",labels=lbs, cex=1.5,cex.main=1.5, radius=0.8,main="",col=c("red", "green", "blue"))
+pers <- round(pers*100,1)
+lbs <- as.vector(p$Variable)
+text(0,-1.2, paste("Known", "(5,538)", sep=""), cex=2.5)
+a <-read.table("splice_site_stat.xls", sep="\t", header=FALSE)
+a <- a[4:6,]
+names(a)<-c("Variable","Value")
+p <- a
+pdffile <- paste("splice_site_stat", ".pdf", sep="")
+par(mar=c(2, 3, 2, 3))
+pers <- p$Value/sum(p$Value)
+lbs <- paste(round(pers*100,2), "%", sep="")
+pie2 <- pie(p$Value,border="white",labels=lbs,cex=1.5,cex.main=1.5,radius=0.8,main="",col=c("red", "green", "blue"))
+pers <- round(pers*100,1)
+lbs <- as.vector(p$Variable)
+legend(-1,1.5,cex=1.5, legend=lbs,text.col="black",bty="n",fill=c("red", "green", "blue"),border=c("red", "green", "blue"))
+text(0,-1.2, paste("Novel", "(77,019)", sep=""), cex=2.5)
+dev.off()
