@@ -2,7 +2,7 @@
 
 A critical role for alternative splicing in maintaining mineral nutrient homeostasis in rice (Oryza sativa). Chunlan Dong, Fei He, et al. (2018). Summary of the study was that genome-wide RNA-seq and mutant analyses reveal the importance of alternative splicing in the mineral deficiency response and in mineral uptake and remobilization in rice.
 
-The repository has 2 folders, including pcd and database. The shell/R code in the main folder is used to replicate the alternative splicing analysis pipeline, including main figures. The shell script provide the step-by-step guide to analize mineral nutrient deficiency RNASeq dataset analysis. The perl/R in the pcd folder will be also called in each shell script. The genome sequence and several associated gene annotation files, which will be the intermediate result of the pipeline is deposited in the database fold. 
+The repository has 2 folders, including pcd and database. The shell/R code in the main folder is used to replicate the alternative splicing analysis pipeline, including main figures. The shell script provide the step-by-step guide to analyze mineral nutrient deficiency RNASeq dataset analysis. The perl/R in the pcd folder will be also called in each shell script. The genome sequence and several associated gene annotation files, which will be the intermediate result of the pipeline is deposited in the database fold. 
  
 1. 0.create_genome_database.sh
 
